@@ -69,7 +69,7 @@ class WbAuth:
 
         logger.info(f"[AUTH] WB_USERNAME={cls.username}")
         logger.info(f"[AUTH] WB_PASSWORD={redact_password(cls._pass)}")
-        logger.info(f"[AUTH] WB_API={redact_password(cls.api)}")
+        logger.info(f"[AUTH] WB_API=***")
 
     @classmethod
     def _update_credentials(cls, email: str, force: bool = False) -> None:
