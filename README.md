@@ -1,3 +1,7 @@
+> **Fork of [mrlt8/docker-wyze-bridge](https://github.com/mrlt8/docker-wyze-bridge).** Images are
+> published to `ghcr.io/jotnguyen/docker-wyze-bridge`, not the Docker Hub image the badges below
+> refer to. See [docs/FORK.md](docs/FORK.md) for what differs from upstream.
+
 [![Docker](https://github.com/mrlt8/docker-wyze-bridge/actions/workflows/docker-image.yml/badge.svg)](https://github.com/mrlt8/docker-wyze-bridge/actions/workflows/docker-image.yml)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/mrlt8/docker-wyze-bridge?logo=github)](https://github.com/mrlt8/docker-wyze-bridge/releases/latest)
 [![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/mrlt8/wyze-bridge?sort=semver&logo=docker&logoColor=white)](https://hub.docker.com/r/mrlt8/wyze-bridge)
