@@ -8,9 +8,9 @@ remotely through Wyze's P2P relay (`NET_MODE=ANY`). The maintained v4 rewrite is
 
 - **No secrets in logs.** The startup log prints the `WB_API` token and the MediaMTX stream
   password as `***` (`[AUTH] WB_API=***`, `[MTX] Auth [<user>:***]`).
-- **Images are published to GHCR only:** `ghcr.io/jotnguyen/docker-wyze-bridge`, multiarch
-  (amd64 + arm64). A push to `main` publishes `:edge`. A tag `vX.Y.Z-<suffix>.N` publishes
-  `:X.Y.Z-<suffix>.N`.
+- **Images are published to GHCR only:** `ghcr.io/jotnguyen/docker-wyze-bridge`, with the same
+  variants as upstream: multiarch (amd64, arm64, armv7), `-hw` and `-qsv`. A push to `main`
+  publishes `:edge`. A tag `vX.Y.Z-<suffix>.N` publishes `:X.Y.Z-<suffix>.N`.
 
 ## Wyze app-version string
 
