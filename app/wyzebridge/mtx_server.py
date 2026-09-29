@@ -5,6 +5,7 @@ from subprocess import DEVNULL, Popen
 from typing import Optional
 
 import yaml
+from wyzebridge.auth import redact_password
 from wyzebridge.bridge_utils import env_bool
 from wyzebridge.logging import logger
 
@@ -239,6 +240,6 @@ def parse_auth(auth: str) -> list[dict[str, str]]:
         else:
             paths = "all"
             data["permissions"].append({"action": "read"})
-        logger.info(f"[MTX] Auth [{data['user']}:{data['pass']}] {paths=}")
+        logger.info(f"[MTX] Auth [{data['user']}:{redact_password(data['pass'])}] {paths=}")
         entries.append(data)
     return entries
